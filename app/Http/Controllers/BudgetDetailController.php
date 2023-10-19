@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\BudgetDetail;
-use Illuminate\Http\Request;
 use App\Http\Requests\StoreBudgetDetailRequest;
 use App\Http\Requests\UpdateBudgetDetailRequest;
 

@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreCountryRequest;
 use App\Http\Requests\UpdateCountryRequest;
 use App\Models\Country;
-use Illuminate\Http\Request;
 
 
 class CountryController extends Controller

@@ -35,7 +35,7 @@ class PaymentFormController extends Controller
      * @param  \App\Http\Requests\StorePaymentFormRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StorePaymentFormRequest $request)
     {
         // Valide os dados do formulário, se necessário
         $request->validate([
@@ -77,7 +77,7 @@ class PaymentFormController extends Controller
      * @param  \App\Models\PaymentForm  $paymentForm
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, FormaPagamento $formaPagamento)
+    public function update(UpdatePaymentFormRequest $request, FormaPagamento $formaPagamento)
     {
         // Valide os dados do formulário, se necessário
         $request->validate([

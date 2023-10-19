@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreZipCodeRequest;
+use App\Http\Requests\UpdateZipCodeRequest;
 use App\Models\ZipCode;
-use Illuminate\Http\Request;
 
 
 class ZipCodeController extends Controller
@@ -26,7 +27,7 @@ class ZipCodeController extends Controller
      * @param  \App\Http\Requests\StoreZipCodeRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreZ $request)
+    public function store(StoreZipCodeRequest $request)
     {
         $data = $request->validated();
 
@@ -59,7 +60,7 @@ class ZipCodeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateZipcodeRequest $request, $id)
+    public function update(UpdateZipCodeRequest $request, $id)
     {
         $zipCode = ZipCode::find($id);
 

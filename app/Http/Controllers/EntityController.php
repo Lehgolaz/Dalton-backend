@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Entity;
-use Illuminate\Http\Request;
 use App\Http\Requests\StoreEntityRequest;
 use App\Http\Requests\UpdateEntityRequest;
 

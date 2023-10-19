@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\State;
-use Illuminate\Http\Request;
 use App\Http\Requests\StoreStateRequest;
 use App\Http\Requests\UpdateStateRequest;
 
