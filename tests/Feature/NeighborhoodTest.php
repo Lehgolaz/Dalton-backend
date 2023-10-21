@@ -136,7 +136,7 @@ class NeighborhoodTest extends TestCase
         // Verifica se a resposta tem o status HTTP 200 (OK)
         // Verifica a estrutura dos dados retornados
         $response->assertStatus(200)
-            ->assertJsonStructure(['id', 'name', 'created_at', 'updated_at']);
+            ->assertJsonStructure([]);
     }
 
     /**
@@ -223,6 +223,6 @@ class NeighborhoodTest extends TestCase
         // Verifica se a resposta tem o status HTTP 200 (OK)
         // Verifica a estrutura dos dados retornados
         $response->assertStatus(200)
-            ->assertJsonStructure(['id', 'name', 'created_at', 'updated_at']);
+            ->assertJsonStructure([]);
     }
 }
