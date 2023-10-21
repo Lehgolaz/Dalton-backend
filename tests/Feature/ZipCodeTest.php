@@ -94,12 +94,4 @@ class ZipCodeTest extends TestCase
         // Verifique se há erros de validação 
         $response->assertJsonValidationErrors(['name']);
     }
-       /**
-     * Testa a criação de um cep com sucesso.
-     *
-     * @return void
-     */
-    public function test_(){
-        
-    }
 }

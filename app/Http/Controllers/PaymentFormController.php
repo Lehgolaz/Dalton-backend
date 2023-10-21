@@ -43,7 +43,7 @@ class PaymentFormController extends Controller
             'descricao' => 'nullable|string',
         ]);
 
-        FormaPagamento::create($request->all());
+        PaymentForm::create($request->all());
 
         return redirect()->route('forma-pagamento.index');
     }
@@ -65,7 +65,7 @@ class PaymentFormController extends Controller
      * @param  \App\Models\PaymentForm  $paymentForm
      * @return \Illuminate\Http\Response
      */
-    public function edit(FormaPagamento $formaPagamento)
+    public function edit(PaymentForm $formaPagamento)
     {
         return view('forma-pagamento.edit', compact('formaPagamento'));
     }
@@ -77,7 +77,7 @@ class PaymentFormController extends Controller
      * @param  \App\Models\PaymentForm  $paymentForm
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdatePaymentFormRequest $request, FormaPagamento $formaPagamento)
+    public function update(UpdatePaymentFormRequest $request, PaymentForm $formaPagamento)
     {
         // Valide os dados do formulário, se necessário
         $request->validate([
@@ -96,7 +96,7 @@ class PaymentFormController extends Controller
      * @param  \App\Models\PaymentForm  $paymentForm
      * @return \Illuminate\Http\Response
      */
-    public function destroy(FormaPagamento $formaPagamento)
+    public function destroy(PaymentForm $formaPagamento)
     {
         $formaPagamento->delete();
         return redirect()->route('forma-pagamento.index');
